@@ -1,13 +1,12 @@
-package plugins
+package logging
 
 import (
 	"github.com/lestrrat/go-file-rotatelogs"
+	"github.com/rifflock/lfshook"
+	"github.com/sirupsen/logrus"
 	"os"
 	"path"
 	"time"
-
-	"github.com/rifflock/lfshook"
-	"github.com/sirupsen/logrus"
 )
 
 //step4.1
@@ -18,7 +17,7 @@ func NewLogger() *logrus.Logger {
 		return Logger
 	}
 	dir, _ := os.Getwd()
-	baseLogPath := path.Join(dir, "log","highlight_gin.log")
+	baseLogPath := path.Join(dir, "log", "highlight_gin.log")
 	writer, _ := rotatelogs.New(
 		baseLogPath+".%Y%m%d%H%M",
 		rotatelogs.WithLinkName(baseLogPath),      // 生成软链，指向最新日志文件
