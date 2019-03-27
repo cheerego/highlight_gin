@@ -3,7 +3,6 @@ package routers
 import (
 	_ "git.catchme.cn/placeless/highlight_gin/pkg/dotenv"
 	_ "git.catchme.cn/placeless/highlight_gin/pkg/logging"
-	"git.catchme.cn/placeless/highlight_gin/pkg/sqlx"
 	"github.com/gin-gonic/gin"
 )
 
@@ -18,7 +17,7 @@ func InitRouter() *gin.Engine {
 	r.GET("/db", func(c *gin.Context) {
 
 		c.JSON(200, gin.H{
-			"result": sqlx.Sqlx.QueryRow("select * from users"),
+			"result": "123",
 		})
 	})
 
