@@ -1,6 +1,7 @@
 package main
 
 import (
+	_ "git.catchme.cn/placeless/highlight_gin/pkg/db"
 	_ "git.catchme.cn/placeless/highlight_gin/pkg/dotenv"
 	"git.catchme.cn/placeless/highlight_gin/routes"
 )
