@@ -43,6 +43,7 @@ func NewLogger() *logrus.Logger {
 }
 
 func init() {
+
 	Logger = NewLogger()
 	// Log as JSON instead of the default ASCII formatter.
 	//Log.SetFormatter(&logrus.JSONFormatter{})

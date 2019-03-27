@@ -2,13 +2,15 @@ package main
 
 import (
 	"fmt"
-	"github.com/gin-gonic/gin"
+
 	"os"
+	"github.com/gin-gonic/gin"
+	_ "git.catchme.cn/placeless/highlight_gin/pkg/dotenv"
 )
 
 func main() {
 
-	fmt.Print(os.Getenv("haha"))
+	fmt.Print(os.Getenv("asd"))
 	r := gin.Default()
 	//gin.SetMode(gin.DebugMode)
 	r.GET("/ping", func(c *gin.Context) {
