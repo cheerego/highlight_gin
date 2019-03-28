@@ -1,8 +1,6 @@
 package routers
 
 import (
-	_ "git.catchme.cn/placeless/highlight_gin/pkg/dotenv"
-	_ "git.catchme.cn/placeless/highlight_gin/pkg/logging"
 	"github.com/gin-gonic/gin"
 )
 

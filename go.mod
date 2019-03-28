@@ -13,6 +13,7 @@ require (
 	github.com/jinzhu/gorm v1.9.2
 	github.com/jinzhu/inflection v0.0.0-20180308033659-04140366298a // indirect
 	github.com/jinzhu/now v1.0.0 // indirect
+	github.com/joho/godotenv v1.3.0
 	github.com/jonboulle/clockwork v0.1.0 // indirect
 	github.com/json-iterator/go v1.1.6 // indirect
 	github.com/konsorten/go-windows-terminal-sequences v1.0.2 // indirect
@@ -34,5 +35,6 @@ require (
 	golang.org/x/sys v0.0.0-20190318195719-6c81ef8f67ca // indirect
 	google.golang.org/appengine v1.4.0 // indirect
 	gopkg.in/go-playground/validator.v8 v8.18.2 // indirect
+	gopkg.in/guregu/null.v3 v3.4.0 // indirect
 	gopkg.in/yaml.v2 v2.2.2 // indirect
 )

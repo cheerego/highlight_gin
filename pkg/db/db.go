@@ -29,9 +29,9 @@ func init() {
 		log.Fatalf("models.Setup err: %v", err)
 	}
 
-	gorm.DefaultTableNameHandler = func(db *gorm.DB, defaultTableName string) string {
-		return setting.DatabaseSetting.TablePrefix + defaultTableName
-	}
+	//gorm.DefaultTableNameHandler = func(db *gorm.DB, defaultTableName string) string {
+	//	return setting.DatabaseSetting.TablePrefix + defaultTableName
+	//}
 
 	db.SingularTable(true)
 	//db.Callback().Create().Replace("gorm:update_time_stamp", updateTimeStampForCreateCallback)
