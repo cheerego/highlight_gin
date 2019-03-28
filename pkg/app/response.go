@@ -16,6 +16,7 @@ type Response struct {
 }
 
 // Response setting gin.JSON
+// Response setting gin.JSON
 func (g *Gin) Response(httpCode, errCode int, data interface{}) {
 	g.C.JSON(httpCode, Response{
 		CodeStatus: httpCode,
@@ -23,4 +24,13 @@ func (g *Gin) Response(httpCode, errCode int, data interface{}) {
 		Data:       data,
 	})
 	return
+}
+
+func (g *Gin) ResponseData(data interface{}) {
+	g.C.JSON(200, Response{
+		CodeStatus: 200,
+		Message:    "success",
+		Data:       data,
+	})
+
 }
